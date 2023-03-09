@@ -1,0 +1,86 @@
+.wrapper {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.input-group__label {
+    color: #666;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.25em;
+}
+
+.input-group__input {
+    display: block;
+    padding: 0.5em;
+    margin-bottom: 0.25em;
+    border: 1px solid #999;
+    border-radius: 0.25em;
+}
+
+.input-group__help {
+    font-size: 0.875em;
+    color: #666;
+}
+
+.input-group__help--error {
+    color: #b40000;
+}
+
+.input-group--error .input-group__label {
+    color: #b40000;
+}
+
+.input-group--error .input-group__input {
+    border-color: #b40000;
+}
+
+.input-group--error .input-group__help {
+    color: #b40000;
+}
+
+.btn {
+    margin-top: 8px;
+    color: white;
+    border: 2px solid #61c0bd;
+    background-color: #61c0bd;
+    padding: 8px 25px;
+    border-radius: 8px;
+    align-self: end;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .form {
+        display: block;
+    }
+
+    .input-group {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .input-group__label {
+        flex: 1
+    }
+
+    .input-group__input {
+        flex: 3
+    }
+    .btn {
+        align-self: stretch;
+    }
+}
